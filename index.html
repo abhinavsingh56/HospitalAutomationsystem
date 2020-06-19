@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>hospital management system</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>body {
+ 
+      }
+.site-footer
+{
+  background-color:#1a067d;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+#fda{
+    
+}
+.slider, 
+.slider > div {
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s;
+    margin-top: -20px;
+}
+
+.slider > div {
+    position: absolute;
+}
+
+.slider > i {
+    color: #5bbd72;
+    position: absolute;
+    font-size: 60px;
+    margin: 20px;
+    top: 40%;
+    text-shadow: 0 10px 2px #223422;
+    transition: .3s;
+    width: 30px;
+    padding: 10px 13px;
+    background: #fff;
+    background: rgba(255, 255, 255, .3);
+    cursor: pointer;
+    line-height: 0;
+    box-sizing: content-box;
+    border-radius: 3px;
+    z-index: 4;
+}
+
+.slider > i svg {
+    margin-top: 3px;
+}
+
+.slider > .left {
+    left: -100px;
+}
+.slider > .right {
+    right: -100px;
+}
+.slider:hover > .left {
+    left: 0;
+}
+.slider:hover > .right {
+    right: 0;
+}
+
+.slider > i:hover {
+    background:#fff;
+    background: rgba(255, 255, 255, .8);
+    transform: translateX(-2px);
+}
+
+.slider > i.right:hover {
+    transform: translateX(2px);
+}
+
+.slider > i.right:active,
+.slider > i.left:active {
+    transform: translateY(1px);
+}
+
+.slider:hover > div {
+    transform: scale(1.01);
+}
+
+.hoverZoomOff:hover > div {
+    transform: scale(1);
+}
+
+.slider > ul {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 4;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-50%);
+}
+
+.slider > ul > li {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    list-style: none;
+    float: left;
+    margin: 10px 10px 0;
+    cursor: pointer;
+    border: 1px solid #fff;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.slider > ul > .showli {
+    background-color: #7EC03D;
+    -moz-animation: boing .5s forwards;
+    -o-animation: boing .5s forwards;
+    -webkit-animation: boing .5s forwards;
+    animation: boing .5s forwards;
+}
+
+.slider > ul > li:hover {
+    background-color: #7EC03D;
+}
+
+.slider > .show {
+    z-index: 1;
+}
+
+.hideDots > ul {
+    display: none;
+}
+
+.showArrows > .left {
+    left: 0;
+}
+
+.showArrows > .right {
+    right: 0;
+}
+
+.titleBar {
+    z-index: 2;
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(100%);
+    padding: 20px 30px;
+    transition: .3s;
+    color: #fff;
+}
+
+.titleBar * {
+    transform: translate(-20px, 30px);
+    transition: all 700ms cubic-bezier(0.37, 0.31, 0.2, 0.85) 200ms;
+    opacity: 0;
+}
+
+.titleBarTop .titleBar * {
+    transform: translate(-20px, -30px);
+}
+
+.slider:hover .titleBar,
+.slider:hover .titleBar * {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.titleBarTop .titleBar {
+    top: 0;
+    bottom: initial;
+    transform: translateY(-100%);
+}
+
+.slider > div span {
+    display: block;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+
+@keyframes boing {
+    0% {
+        transform: scale(1.2);
+    }
+    40% {
+        transform: scale(.6);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* -------------------------------------- */
+
+
+.row2Wrap {
+    display: flex;
+}
+
+.content {
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.content {
+    padding: 10px 15vw;
+}
+.container-fluid{
+    background-color: #1a067d !important;
+}
+</style>
+</head>
+<body >
+    <div id="fda">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">BansalHospital</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+     
+      <li><a href="docterregistration.jsp">Registration</a></li>
+      <li><a href="login.jsp">
+              Docter'sLogin</a></li>
+        <li><a href="rlogin.jsp">
+              Reception</a></li>
+      <li><a href="alogin.jsp">Adminlogin</a></li>
+       <li><a href="gallery.jsp">Gallery</a></li>
+       <li><a href="about.jsp">about</a></li>
+    </ul>
+  </div>
+</nav>
+       
+        
+        
+<div class="slider" id="slider1">
+   
+    <div style="background-image:url(https://hair-transplant-in-turkey.co.uk/wp-content/uploads/2017/11/doctor-team.jpeg)"></div>
+    <div style="background-image:url(https://cdn.southampton.ac.uk/assets/imported/transforms/content-block/CB_RImg/A32021BC8C35482BB369922D9CC512D1/some%20nurse%20480%20x%20297.jpg_SIA_JPG_background_image.jpg)"></div>
+    <div style="background-image:url(https://topmastersinhealthcare.azureedge.net/wp-content/uploads/2014/03/Lead.jpg)"></div>
+    <div style="background-image:url(https://lh4.googleusercontent.com/proxy/Qkgf7UR_Gw4dg8j-7HfIiZvQ_31mUPPOoDMS3-vASR71iUozIjKfM8nt_wwed8vMxGjc2XR_d3ZbKXk27i2LEeoAGBLh4pmMdyM9piy28u4-qDUEYQZOuc21MMSYbcpo4S6QJcg6_MGmhs9xoqo0RTJ0rTrVlH3mecSSR-pS86G-tDXpdJdrxVuPkI_2s5zhEMr_k9qqPaqhmI3p9AX5xcE8r-ZbBA4wgStO6RV52LpnyMr8IaUmoidrySXLTMGScoQnMCZlbFeJfDZSwret1vWD0GClbA7h-E9_FUY1e5oruknSdBFFRYYPsB8bKMgxLrnxCY-P1seUW2ZE)"></div>
+    <div style="background-image:url(data:image/jpeg;base64,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)"></div>
+    
+    <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
+    <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
+    
+</div>
+
+        
+        
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Send a message here</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Indore, MP<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +123456789<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: hospital@hospital.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="process.jsp" >
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" name="name"type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" name="email" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" name="message" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+
+<div class="container">
+  </div>
+
+    </div>
+      <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+         <a href="#">Scanfcode</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+      <script>
+(function($) {
+  "use strict";
+  $.fn.sliderResponsive = function(settings) {
+    
+    var set = $.extend( 
+      {
+        slidePause: 5000,
+        fadeSpeed: 800,
+        autoPlay: "on",
+        showArrows: "off", 
+        hideDots: "off", 
+        hoverZoom: "on",
+        titleBarTop: "off"
+      },
+      settings
+    ); 
+    
+    var $slider = $(this);
+    var size = $slider.find("> div").length; //number of slides
+    var position = 0; // current position of carousal
+    var sliderIntervalID; // used to clear autoplay
+      
+    // Add a Dot for each slide
+    $slider.append("<ul></ul>");
+    $slider.find("> div").each(function(){
+      $slider.find("> ul").append('<li></li>');
+    });
+      
+    // Put .show on the first Slide
+    $slider.find("div:first-of-type").addClass("show");
+      
+    // Put .showLi on the first dot
+    $slider.find("li:first-of-type").addClass("showli")
+
+     //fadeout all items except .show
+    $slider.find("> div").not(".show").fadeOut();
+    
+    // If Autoplay is set to 'on' than start it
+    if (set.autoPlay === "on") {
+        startSlider(); 
+    } 
+    
+    // If showarrows is set to 'on' then don't hide them
+    if (set.showArrows === "on") {
+        $slider.addClass('showArrows'); 
+    }
+    
+    // If hideDots is set to 'on' then hide them
+    if (set.hideDots === "on") {
+        $slider.addClass('hideDots'); 
+    }
+    
+    // If hoverZoom is set to 'off' then stop it
+    if (set.hoverZoom === "off") {
+        $slider.addClass('hoverZoomOff'); 
+    }
+    
+    // If titleBarTop is set to 'on' then move it up
+    if (set.titleBarTop === "on") {
+        $slider.addClass('titleBarTop'); 
+    }
+
+    // function to start auto play
+    function startSlider() {
+      sliderIntervalID = setInterval(function() {
+        nextSlide();
+      }, set.slidePause);
+    }
+    
+    // on mouseover stop the autoplay
+    $slider.mouseover(function() {
+      if (set.autoPlay === "on") {
+        clearInterval(sliderIntervalID);
+      }
+    });
+      
+    // on mouseout starts the autoplay
+    $slider.mouseout(function() {
+      if (set.autoPlay === "on") {
+        startSlider();
+      }
+    });
+
+    //on right arrow click
+    $slider.find("> .right").click(nextSlide)
+
+    //on left arrow click
+    $slider.find("> .left").click(prevSlide);
+      
+    // Go to next slide
+    function nextSlide() {
+      position = $slider.find(".show").index() + 1;
+      if (position > size - 1) position = 0;
+      changeCarousel(position);
+    }
+    
+    // Go to previous slide
+    function prevSlide() {
+      position = $slider.find(".show").index() - 1;
+      if (position < 0) position = size - 1;
+      changeCarousel(position);
+    }
+
+    //when user clicks slider button
+    $slider.find(" > ul > li").click(function() {
+      position = $(this).index();
+      changeCarousel($(this).index());
+    });
+
+    //this changes the image and button selection
+    function changeCarousel() {
+      $slider.find(".show").removeClass("show").fadeOut();
+      $slider
+        .find("> div")
+        .eq(position)
+        .fadeIn(set.fadeSpeed)
+        .addClass("show");
+      // The Dots
+      $slider.find("> ul").find(".showli").removeClass("showli");
+      $slider.find("> ul > li").eq(position).addClass("showli");
+    }
+
+    return $slider;
+  };
+})(jQuery);
+
+
+ 
+//////////////////////////////////////////////
+// Activate each slider - change options
+//////////////////////////////////////////////
+$(document).ready(function() {
+  
+  $("#slider1").sliderResponsive({
+  // Using default everything
+    // slidePause: 5000,
+    // fadeSpeed: 800,
+    // autoPlay: "on",
+    // showArrows: "off", 
+    // hideDots: "off", 
+    // hoverZoom: "on", 
+    // titleBarTop: "off"
+  });
+  
+  $("#slider2").sliderResponsive({
+    fadeSpeed: 300,
+    autoPlay: "off",
+    showArrows: "on",
+    hideDots: "on"
+  });
+  
+  $("#slider3").sliderResponsive({
+    hoverZoom: "off",
+    hideDots: "on"
+  });
+  
+}); 
+
+
+</script>
+</body>
+</html>
