@@ -1,2 +1,3 @@
 # HospitalAutomationsystem
 A hospital Management System For feeding updated regarding hopsital's docaters, patients and wards, system also includes online appointment system.
+ files uploaded here are not at there correct path package and folder executing and testing it make sure you do that...
